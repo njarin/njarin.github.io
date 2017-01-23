@@ -8,16 +8,11 @@ body {
 
 h1, h2, h4, th { 
 	color: #34B0EC;	
-
  }
 
-p {
-
-}
 
 a:link {
 	color: #FB8C33;
-
 }
 
 a:hover {
@@ -129,5 +124,25 @@ figcaption {
 	text-align: right;
 }
 
+figure {
+	margin: 0px;
+	padding: 0px;
+}
 
+.contact-form {
+	width: 65%;
+}
+
+.contact-form div {
+	margin: 5px;
+	padding: 5px;
+}
+
+.contact-form input {
+	width: 60%;
+}
+
+.contact-form textarea {
+	width: 70%;
+}
 
