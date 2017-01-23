@@ -13,7 +13,7 @@ h1 {
  }
 
 p {
-	color: white;
+
 }
 
 
@@ -21,26 +21,67 @@ p {
 #logo {
 	width: 20%;
 	height: 20%;
+	margin-left: 40%
+
 }
 
 
-ul {
+
+#navigation-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #4F4F4F;
+    color: #4F4F4F;
     display: inline-block;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: white;
 }
 
-li {
+#navigation-bar li {
     float: left;
 }
 
-li a {
+#navigation-bar li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5px 20px;
     text-decoration: none;
+    
 }
+
+.reviews  {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+
+}
+
+.reviews p {
+
+}
+
+#welcome {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+}
+
+#welcome img {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	z-index: -1;
+}
+
+#welcome p {
+	position: absolute;
+	width:30%;
+	z-index: 0;
+	top: 400px;
+	color: #34B0EC;
+	font-size: 30px;
+	text-shadow: 1px white;
+}
+
