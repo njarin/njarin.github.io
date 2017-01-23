@@ -66,8 +66,8 @@ a:visited {
 	border-style: solid;
 	border-width: 1px;
 	border-color: #31B1E8;
-	border-top-width: 5px;
-	border-bottom-width: 5px;
+	border-top-width: 10px;
+	border-bottom-width: 10px;
 }
 
 .reviews h4 {
@@ -81,32 +81,32 @@ a:visited {
 	padding-bottom: 5px;
 }
 
-#welcome {
+.welcome {
 	position: relative;
 	display: inline-block;
 	width: 75%;
 	vertical-align: top;
 }
 
-#welcome img {
+.welcome img {
 	position: relative;
 	width: 100%;
 	display: inline-block;
 	z-index: -1;
 }
 
-#welcome p {
+.welcome p {
 	position: absolute;
 	display: inline-block;
 	vertical-align: top;
-	width: 35%;
+	width: 40%;
 	z-index: 0;
-	top: 270px;
+	top: 220px;
 	color: #31B1E8;
 	font-size: 24px;
 	text-shadow: 3px .5px black;
 	text-align: center;
-	font-family: Lucida Sans;
+	font-family: "Lucida Sans";
 	padding: 5px;
 }
 
@@ -153,25 +153,48 @@ figure {
 	width: 70%;
 }
 
+#host-pic {
+	margin: 10px;
+}
 
+#host-pic img {
+	width: 90%;
+}
+
+/*Rearrange side bar for narrower screen*/
 @media screen and (max-width: 850px) {
-	#welcome {
+	.welcome {
 		position: relative;
 		display: block;
 		width: 100%;
-		z-index: 0;
 	}
 
-	#welcome p {
-		display: block;
-		margin-left: 45%;
-		width: 60%;
-	}
-
-	.reviews section {
+	.reviews {
 		position: relative;
-		display: inline-block;
+		display: block;
 		width: 50%;
-		margin-left: 40%;
+		float: center;
 	}
 }
+
+/*Rearrange for mobile */
+@media screen and (max-width: 675px) {
+	.welcome p {
+		position: relative;
+		display: block;
+		width: 90%;
+		z-index: 0;
+		top: 0;
+		margin: 15px;
+	}
+	.welcome figure {
+		position: relative;
+		display: block;
+		z-index: 0;
+	}
+	.reviews {
+		width: 80%;
+	}
+}
+
+
